@@ -2,6 +2,7 @@
 #include "log.h"
 #include "commands.h"
 #include "utils.h"
+#include "process.h"
 
 int main()
 {
@@ -21,52 +22,70 @@ int main()
 
     subHomeToTilde(cwd,homedir);
 
-    char command[COMMAND_MAX];
+    loadHistory();
 
+    char command[COMMAND_MAX];
+    char *argv[MAX_ARGS];
+    
     while(1)
     {
         printf(BOLD_LIME_GREEN);
         printf("<%s@%s:%s> ",username,hostname,cwd);
         printf(ANSI_COLOR_RESET);
-
+        
         fgets(command,sizeof(command),stdin);
         int cmdlen = strlen(command);
-
-        command[cmdlen-1] = '\0';
+        command[--cmdlen] = 0;
 
         updateHistory(command);
 
-        char* shellcmd = strtok(command, delimiters);
+        int argc = splitArgs(argv,command);
 
-        logString(2,"Shell Command :",shellcmd);
+        if(argc == 0)continue;
 
-        if(strcmp(shellcmd,allCommands[0]) == 0)
+        logString(2,"Shell Command :",argv[0]);
+
+        if(strcmp(argv[0],allCommands[0]) == 0)
         {            
-            echo();
+            echo(argv);
         }
-        else if(strcmp(shellcmd,allCommands[1]) == 0)
+        else if(strcmp(argv[0],allCommands[1]) == 0)
         {
             pwd();
         }
-        else if(strcmp(shellcmd,allCommands[2]) == 0)
+        else if(strcmp(argv[0],allCommands[2]) == 0)
         {
-            changeDir(cwd,homedir);
-            updateCWD(cwd,homedir,sizeof(cwd));
+            changeDir(argv,cwd,homedir);
         }
-        else if(strcmp(shellcmd,allCommands[3]) == 0)
+        else if(strcmp(argv[0],allCommands[3]) == 0)
         {
             getHistory();
         }
-        else if(strcmp(shellcmd,allCommands[4]) == 0)
+        else if(strcmp(argv[0],allCommands[4]) == 0)
         {
             logString(1,"Exiting");
             break;
         }
         else
         {
-            printf("Unknown Command : %s\n",shellcmd);
+            int rarglen = strlen(argv[argc-1]);     // Length of Last Argument
+            if(argv[argc-1][rarglen-1] == '&')
+            {
+                if(rarglen == 1)
+                argv[--argc] = NULL;
+                else
+                argv[argc-1][--rarglen] = '\0';
+                
+                executeStandaloneCommand(argv,0);
+            }
+            else
+            executeStandaloneCommand(argv,1);
         }
+
+        updateCWD(cwd,homedir,sizeof(cwd));
     }
+
+    writeHistory();
 
     logDest();
 

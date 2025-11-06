@@ -1,15 +1,11 @@
 #include "commands.h"
-#include "utils.h"
-#include "log.h"
 
-void echo()
+void echo(char** argv)
 {
-    char* token = strtok(NULL,delimiters);
-
-    while(token != NULL)
+    int argc = 1;
+    while(argv[argc] != NULL)
     {
-        printf("%s ",token);
-        token = strtok(NULL,delimiters);
+        printf("%s ",argv[argc++]);
     }
     printf("\n");
 }
@@ -22,18 +18,16 @@ void pwd()
     printf("%s\n",cwd);
 }
 
-void changeDir(char * cwd,char* homedir)
+void changeDir(char** argv,char * cwd,char* homedir)
 {
-    char* token = strtok(NULL,delimiters);
+    int argc = 1;
 
-    if(token != NULL)
+    if(argv[argc] != NULL)
     {
         char path[PATH_MAX];
-        strcpy(path,token);
+        strcpy(path,argv[argc++]);
 
-        token = strtok(NULL,delimiters);
-
-        if(token!=NULL)
+        if(argv[argc]!=NULL)
         {
             printf("Too Many Arguments\n");
             return;
@@ -66,13 +60,17 @@ void changeDir(char * cwd,char* homedir)
         logString(1,"cd Code Returned:");
         logInteger(cdCode);
         
-        if(cdCode != 0)
+        if(cdCode == -1)
         {
             printf("%s: No such directory\n",path);
         }
-        else
+        else if(cdCode == 0)
         {
             strcpy(prevDir,cwd);
+        }
+        else
+        {
+            perror("Error while changing directory");
         }
     }
     else
@@ -85,7 +83,7 @@ void changeDir(char * cwd,char* homedir)
 
 void getHistory()
 {
-    char* token = strtok(NULL,delimiters);
+    char* token = strtok(NULL,DELIMITERS);
 
     if(token != NULL)
     {
@@ -97,15 +95,4 @@ void getHistory()
     {
         printf("%s\n",historyData[(i + historyStart)%HISTORY_LEN]);
     }
-}
-
-void writeHistory()
-{
-    FILE* historyFile = fopen(historyPath,"w");
-    for(int i=0;historyLen;i++)
-    {
-        fprintf(historyFile,"%s\n",historyData[(i+historyStart)%HISTORY_LEN]);
-    }
-
-    fclose(historyFile);
 }

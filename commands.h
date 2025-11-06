@@ -1,8 +1,8 @@
 #pragma once
 
 #include "defines.h"
-
-static const char* delimiters = " \t";
+#include "utils.h"
+#include "log.h"
 
 static const char *allCommands[] = {
         "echo",
@@ -14,10 +14,10 @@ static const char *allCommands[] = {
 
 static char prevDir[PATH_MAX];
 
-void echo();
+void echo(char** argv);
 
 void pwd();
 
-void changeDir(char * cwd,char* homedir);
+void changeDir(char** argv,char * cwd,char* homedir);
 
 void getHistory();

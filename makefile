@@ -1,2 +1,2 @@
-shell: main.c utils.c log.c commands.c
-	gcc main.c utils.c log.c commands.c -o shell
+shell: main.c utils.c log.c commands.c process.c
+	gcc main.c utils.c log.c commands.c process.c -o shell

@@ -7,6 +7,9 @@
 #define COMMAND_MAX 1000
 #define HISTORY_LEN 20
 #define HISTORY_DISPLAY 10
+#define MAX_ARGS 64
+
+#define DELIMITERS " \t\n"
 
 #define MIN(X, Y) (((X) < (Y)) ? (X) : (Y))
 #define MAX(X, Y) (((X) > (Y)) ? (X) : (Y))

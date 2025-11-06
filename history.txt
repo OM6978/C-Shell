@@ -1,0 +1,20 @@
+cd CP
+ls
+cd CSES
+ls
+cd DP
+ls
+g++ coinCombs1.cpp
+ls
+cd ..
+cd ../../
+ls
+cd C-Shhell
+ls
+cd C-Shell
+ls
+history
+exit
+cd /home/..
+cd /home/..~
+exit

@@ -273,3 +273,266 @@ Shell Command : history
 Shell Command : exit
 Exiting
 
+---------- [Session Date and Time: 06/11/2025 11:29:34] ----------
+
+Shell Command : history
+Shell Command : exit
+Exiting
+---------- [Session Date and Time: 06/11/2025 11:31:18] ----------
+
+Shell Command : history
+Shell Command : exit
+Exiting
+---------- [Session Date and Time: 06/11/2025 11:31:54] ----------
+
+Shell Command : history
+Shell Command : exit
+Exiting
+---------- [Session Date and Time: 06/11/2025 11:33:08] ----------
+
+Shell Command : history
+Shell Command : exit
+Exiting
+
+---------- [Session Date and Time: 06/11/2025 11:41:17] ----------
+
+Shell Command : cd
+Path Specified in cd: lol
+cd Code Returned:
+-1
+Shell Command : exit
+Exiting
+
+---------- [Session Date and Time: 06/11/2025 11:43:04] ----------
+
+Shell Command : cd
+Path Specified in cd: lol
+cd Code Returned:
+-1
+Shell Command : cd
+Path Specified in cd: /home/om
+cd Code Returned:
+0
+Shell Command : cd
+Path Specified in cd: /home
+cd Code Returned:
+0
+Shell Command : cd
+Path Specified in cd: ..
+cd Code Returned:
+0
+Shell Command : exit
+Exiting
+
+---------- [Session Date and Time: 06/11/2025 11:49:06] ----------
+
+Shell Command : echo
+Shell Command : exit
+Exiting
+
+---------- [Session Date and Time: 06/11/2025 12:00:33] ----------
+
+Shell Command : ls
+Shell Command : exit
+Exiting
+
+---------- [Session Date and Time: 06/11/2025 12:01:10] ----------
+
+Shell Command : ls
+Shell Command : exit
+Exiting
+
+---------- [Session Date and Time: 06/11/2025 12:03:35] ----------
+
+Shell Command : ls
+Shell Command : ls
+Shell Command : cat
+Shell Command : history
+Shell Command : fastfetch
+Shell Command : exit
+Exiting
+
+---------- [Session Date and Time: 06/11/2025 12:05:43] ----------
+
+Shell Command : history
+Shell Command : cd
+Path Specified in cd: ..
+cd Code Returned:
+0
+Shell Command : cd
+Path Specified in cd: C-Shell
+cd Code Returned:
+0
+Shell Command : ls
+Shell Command : exit
+Exiting
+
+---------- [Session Date and Time: 06/11/2025 12:07:11] ----------
+
+Shell Command : sleep
+Shell Command : exit
+Exiting
+
+---------- [Session Date and Time: 06/11/2025 12:13:56] ----------
+
+Shell Command : ls
+Shell Command : echo
+Shell Command : fkdas
+Shell Command : echo
+Shell Command : exit
+Exiting
+
+---------- [Session Date and Time: 06/11/2025 12:15:32] ----------
+
+Shell Command : fjdklas
+Shell Command : exit
+Exiting
+
+Shell Command : exit
+Exiting
+
+---------- [Session Date and Time: 06/11/2025 12:16:31] ----------
+
+Shell Command : jdflsa
+Shell Command : exit
+Exiting
+
+---------- [Session Date and Time: 06/11/2025 12:23:30] ----------
+
+Shell Command : history
+Shell Command : exit
+Exiting
+
+---------- [Session Date and Time: 06/11/2025 12:23:36] ----------
+
+Shell Command : history
+Shell Command : exit
+Exiting
+
+---------- [Session Date and Time: 06/11/2025 12:40:10] ----------
+
+Shell Command : echo
+Shell Command : echo
+Shell Command : ls
+Shell Command : grep
+Shell Command : ls
+Shell Command : ls|grep
+Shell Command : ls
+Shell Command : exit
+Exiting
+
+---------- [Session Date and Time: 06/11/2025 12:44:17] ----------
+
+Shell Command : sleep
+Shell Command : sleep
+Shell Command : exit
+Exiting
+
+---------- [Session Date and Time: 06/11/2025 12:45:49] ----------
+
+Shell Command : sleep
+Shell Command : exit
+Exiting
+
+---------- [Session Date and Time: 06/11/2025 12:47:05] ----------
+
+Shell Command : sleep
+Shell Command : sleep
+Shell Command : ls
+---------- [Session Date and Time: 06/11/2025 12:48:09] ----------
+
+Shell Command : ls
+Shell Command : exit
+Exiting
+
+---------- [Session Date and Time: 06/11/2025 12:49:31] ----------
+
+Shell Command : cd
+Path Specified in cd: ..
+cd Code Returned:
+0
+Shell Command : ls
+Shell Command : cd
+Path Specified in cd: BBTP-2
+cd Code Returned:
+-1
+Shell Command : cd
+Path Specified in cd: BTP-2
+cd Code Returned:
+0
+Shell Command : ls
+Shell Command : history
+Shell Command : exit
+Exiting
+
+---------- [Session Date and Time: 06/11/2025 12:50:51] ----------
+
+Shell Command : history
+Shell Command : cd
+Path Specified in cd: ..
+cd Code Returned:
+0
+Shell Command : cd
+Path Specified in cd: BTP-2
+cd Code Returned:
+0
+Shell Command : ls
+Shell Command : cd
+Path Specified in cd: ..
+cd Code Returned:
+0
+Shell Command : history
+Shell Command : ls
+Shell Command : cd
+Path Specified in cd: CP
+cd Code Returned:
+0
+Shell Command : ls
+Shell Command : cd
+Path Specified in cd: CSES
+cd Code Returned:
+0
+Shell Command : ls
+Shell Command : cd
+Path Specified in cd: DP
+cd Code Returned:
+0
+Shell Command : ls
+Shell Command : g++
+Shell Command : ls
+Shell Command : cd
+Path Specified in cd: ..
+cd Code Returned:
+0
+Shell Command : cd
+Path Specified in cd: ../../
+cd Code Returned:
+0
+Shell Command : ls
+Shell Command : cd
+Path Specified in cd: C-Shhell
+cd Code Returned:
+-1
+Shell Command : ls
+Shell Command : cd
+Path Specified in cd: C-Shell
+cd Code Returned:
+0
+Shell Command : ls
+Shell Command : history
+Shell Command : exit
+Exiting
+
+---------- [Session Date and Time: 06/11/2025 12:53:05] ----------
+
+Shell Command : cd
+Path Specified in cd: /home/..
+cd Code Returned:
+0
+Shell Command : cd
+Path Specified in cd: /home/../home/om
+cd Code Returned:
+0
+Shell Command : exit
+Exiting
+

@@ -16,9 +16,7 @@ int isPrefix(char* path,char* homedir)
     for(int i=0;i<hlen;i++)
     {
         if(path[i] != homedir[i])
-        {
             return 0;
-        }
     }
 
     return 1;
@@ -80,6 +78,45 @@ void subTildetoHome(char* path,char* homedir)
     path[plen] = '\0';
 }
 
+int splitArgs(char** argv,char* command)
+{
+    int argc = 0;
+    char* token = strtok(command,DELIMITERS);
+    
+    while(token != NULL)
+    {
+        if(argc == MAX_ARGS-1)
+        {
+            perror("Argument Limit Exceeded");
+        }
+
+        argv[argc++] = token;
+        token = strtok(NULL,DELIMITERS);
+    }
+
+    argv[argc] = NULL;
+
+    return argc;
+}
+
+void loadHistory()
+{
+    FILE *historyFile = fopen(historyPath, "r");
+    
+    if(historyFile == NULL)return;
+
+    char buffer[COMMAND_MAX];
+
+    while(fgets(buffer, COMMAND_MAX, historyFile) != NULL && historyLen < HISTORY_LEN)
+    {
+        buffer[strcspn(buffer, "\n")] = 0; 
+        
+        strcpy(historyData[historyLen++], buffer);
+    }
+
+    fclose(historyFile);
+}
+
 void updateHistory(char* command)
 {
     if(historyLen == HISTORY_LEN)
@@ -91,4 +128,16 @@ void updateHistory(char* command)
     {
         strcpy(historyData[historyLen++],command);
     }
+}
+
+void writeHistory()
+{
+    FILE* historyFile = fopen(historyPath,"w");
+
+    for(int i=0;i<historyLen;i++)
+    {
+        fprintf(historyFile,"%s\n",historyData[(i+historyStart)%HISTORY_LEN]);
+    }
+
+    fclose(historyFile);
 }
