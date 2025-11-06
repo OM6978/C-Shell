@@ -1,0 +1,275 @@
+---------- [Session Date and Time: 06/11/2025 09:59:24] ----------
+
+Shell Command : cd 
+---------- [Session Date and Time: 06/11/2025 10:00:42] ----------
+
+Shell Command : exit 
+Exiting 
+
+---------- [Session Date and Time: 06/11/2025 10:00:48] ----------
+
+Shell Command : cd 
+Path Specified in cd: /home/om 
+---------- [Session Date and Time: 06/11/2025 10:01:16] ----------
+
+Shell Command : cd 
+Path Specified in cd: lol 
+Shell Command : exit 
+Exiting 
+
+---------- [Session Date and Time: 06/11/2025 10:02:16] ----------
+
+Shell Command : cd 
+Path Specified in cd: /home/om 
+---------- [Session Date and Time: 06/11/2025 10:05:31] ----------
+
+Shell Command : cd 
+Path Specified in cd: /home/om 
+---------- [Session Date and Time: 06/11/2025 10:08:21] ----------
+
+Shell Command : cd
+Path Specified in cd: /home/om
+---------- [Session Date and Time: 06/11/2025 10:12:11] ----------
+
+Shell Command : cd
+Path Specified in cd: /home/om
+---------- [Session Date and Time: 06/11/2025 10:12:42] ----------
+
+Shell Command : cd
+Path Specified in cd: /home/om
+cd Code Returned:
+---------- [Session Date and Time: 06/11/2025 10:15:03] ----------
+
+Shell Command : cd
+Path Specified in cd: /home/om
+---------- [Session Date and Time: 06/11/2025 10:19:05] ----------
+
+Shell Command : cd
+Path Specified in cd: /home/om
+---------- [Session Date and Time: 06/11/2025 10:22:29] ----------
+
+Shell Command : cd
+Path Specified in cd: /home/om
+---------- [Session Date and Time: 06/11/2025 10:22:50] ----------
+
+Shell Command : cd
+Path Specified in cd: /home/om/Acads
+---------- [Session Date and Time: 06/11/2025 10:25:32] ----------
+
+Shell Command : cd
+Path Specified in cd: /home/om
+---------- [Session Date and Time: 06/11/2025 10:27:59] ----------
+
+Shell Command : cd
+Path Specified in cd: /home/om
+cd Code Returned:
+0
+Shell Command : exit
+Exiting
+
+---------- [Session Date and Time: 06/11/2025 10:28:53] ----------
+
+Shell Command : cd
+Path Specified in cd: /home/om
+cd Code Returned:
+0
+Shell Command : exit
+Exiting
+
+---------- [Session Date and Time: 06/11/2025 10:32:36] ----------
+
+Shell Command : cd
+Path Specified in cd: /home/om
+cd Code Returned:
+0
+Shell Command : cd
+Path Specified in cd: /home/om/Acads
+cd Code Returned:
+0
+Shell Command : cd
+No Path Specified Defaulting to home dir
+Shell Command : exit
+Exiting
+
+---------- [Session Date and Time: 06/11/2025 10:36:59] ----------
+
+Shell Command : cd
+Path Specified in cd: ..
+cd Code Returned:
+0
+Shell Command : cd
+Path Specified in cd: ../BTP-2
+cd Code Returned:
+-1
+Shell Command : cd
+Path Specified in cd: ../Acads
+cd Code Returned:
+0
+Shell Command : cd
+Path Specified in cd: ../Documents
+cd Code Returned:
+0
+Shell Command : exit
+Exiting
+
+---------- [Session Date and Time: 06/11/2025 10:48:53] ----------
+
+Shell Command : cd
+- mentioned in cd, Size of Previous Directory:
+0
+Path Specified in cd: -
+cd Code Returned:
+-1
+Shell Command : exit
+Exiting
+
+---------- [Session Date and Time: 06/11/2025 10:49:13] ----------
+
+Shell Command : cd
+Path Specified in cd: =
+cd Code Returned:
+-1
+Shell Command : cd
+- mentioned in cd, Size of Previous Directory:
+0
+Shell Command : cd
+Path Specified in cd: /home
+cd Code Returned:
+0
+Shell Command : cd
+- mentioned in cd, Size of Previous Directory:
+15
+Path Specified in cd: /home/om/Acads/C-Shell
+cd Code Returned:
+0
+Shell Command : exit
+Exiting
+
+---------- [Session Date and Time: 06/11/2025 10:50:36] ----------
+
+Shell Command : cd
+- mentioned in cd, Size of Previous Directory:
+0
+Shell Command : cd
+Path Specified in cd: /home
+cd Code Returned:
+0
+Shell Command : cd
+- mentioned in cd, Size of Previous Directory:
+15
+Path Specified in cd: /home/om/Acads/C-Shell
+cd Code Returned:
+0
+Shell Command : exit
+Exiting
+
+---------- [Session Date and Time: 06/11/2025 11:15:36] ----------
+
+Shell Command : history
+Shell Command : exit
+Exiting
+
+---------- [Session Date and Time: 06/11/2025 11:16:17] ----------
+
+Shell Command : history
+Shell Command : cd
+Path Specified in cd: /home
+cd Code Returned:
+0
+Shell Command : cd
+Path Specified in cd: /om
+cd Code Returned:
+-1
+Shell Command : history
+Shell Command : exit
+Exiting
+
+---------- [Session Date and Time: 06/11/2025 11:17:05] ----------
+
+Shell Command : history
+Shell Command : cd
+Path Specified in cd: /home/om
+cd Code Returned:
+0
+Shell Command : cd
+Path Specified in cd: lol
+cd Code Returned:
+-1
+Shell Command : echo
+Shell Command : echo
+Shell Command : echo
+Shell Command : echo
+Shell Command : echo
+Shell Command : echo
+Shell Command : echo
+Shell Command : echo
+Shell Command : echo
+Shell Command : echo
+Shell Command : echo
+Shell Command : echo
+Shell Command : echo
+Shell Command : echo
+Shell Command : history
+Shell Command : echo
+Shell Command : echo
+Shell Command : echo
+Shell Command : echo
+Shell Command : history
+Shell Command : exit
+Exiting
+
+---------- [Session Date and Time: 06/11/2025 11:22:06] ----------
+
+Shell Command : history
+Shell Command : cd
+Path Specified in cd: /home/om
+cd Code Returned:
+0
+Shell Command : cd
+Path Specified in cd: Acads
+cd Code Returned:
+0
+Shell Command : cd
+Path Specified in cd: C-Shell
+cd Code Returned:
+0
+Shell Command : echo
+Shell Command : echo
+Shell Command : echo
+Shell Command : history
+Shell Command : cd
+Path Specified in cd: ..
+cd Code Returned:
+0
+Shell Command : cd
+Path Specified in cd: C-Shell
+cd Code Returned:
+0
+Shell Command : cd
+- mentioned in cd, Size of Previous Directory:
+7
+Path Specified in cd: /home/om/Acads
+cd Code Returned:
+0
+Shell Command : history
+Shell Command : cd
+Path Specified in cd: lol
+cd Code Returned:
+-1
+Shell Command : echo
+Shell Command : echo
+Shell Command : echo
+Shell Command : echo
+Shell Command : echo
+Shell Command : echo
+Shell Command : echo
+Shell Command : echo
+Shell Command : echo
+Shell Command : echo
+Shell Command : echo
+Shell Command : echo
+Shell Command : echo
+Shell Command : history
+Shell Command : exit
+Exiting
+
