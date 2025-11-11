@@ -1,8 +1,10 @@
 #include "log.h"
 
+static FILE* logPtr;
+
 void logInit()
 {
-    FILE* logPtr = fopen(LOG_FILE,"a");
+    logPtr = fopen(LOG_FILE,"a");
 
     time_t now = time(NULL);
     struct tm *t = localtime(&now);
@@ -11,48 +13,37 @@ void logInit()
         t->tm_hour, t->tm_min, t->tm_sec);
 
     fprintf(logPtr,"\n");
-
-    fclose(logPtr);
+    fflush(logPtr);
 }
 
-void logString(int num_args, ...)
+void logMessage(const char *format, ...)
 {
-    if(num_args == 0)return;
-
-    FILE* logPtr = fopen(LOG_FILE,"a");
-    
     va_list args;
-    const char *current_string;
-    int count = 0;
+    va_start(args, format);
     
-    va_start(args, num_args);
-
-    for(int i=0;i<num_args-1;i++)
-    {
-        current_string = va_arg(args, const char *);
-        fprintf(logPtr,"%s ", current_string);
-    }
-
-    current_string = va_arg(args, const char *);
-    fprintf(logPtr,"%s", current_string);
+    vfprintf(logPtr, format, args);
     
     va_end(args);
-
-    fprintf(logPtr,"\n");
-
-    fclose(logPtr);
+    
+    if (format[strlen(format) - 1] != '\n') {
+        fprintf(logPtr, "\n");
+    }
+    fflush(logPtr);
 }
 
-void logInteger(int x)
+void logArgs(char ** argv)
 {
-    FILE* logPtr = fopen(LOG_FILE,"a");
-    fprintf(logPtr,"%d\n",x);
-    fclose(logPtr);
+    int argc = 0;
+    while(argv[argc] != NULL)
+    {
+        logMessage("%s ",argv[argc++]);
+    }
 }
 
 void logDest()
 {
-    FILE* logPtr = fopen(LOG_FILE,"a");
+    if(logPtr == NULL)return;
+
     fprintf(logPtr,"\n");
     fclose(logPtr);
 }

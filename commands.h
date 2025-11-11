@@ -2,6 +2,7 @@
 
 #include "defines.h"
 #include "utils.h"
+#include "history.h"
 #include "log.h"
 
 static const char *allCommands[] = {

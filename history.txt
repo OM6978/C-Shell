@@ -1,20 +1,20 @@
-cd CP
-ls
-cd CSES
-ls
-cd DP
-ls
-g++ coinCombs1.cpp
-ls
-cd ..
-cd ../../
-ls
-cd C-Shhell
-ls
-cd C-Shell
-ls
-history
 exit
-cd /home/..
-cd /home/..~
+exit
+cd ..
+cd -
+cd -
+exit
+exit
+wc -l < history.txt > output.txt
+ls
+ls
+ls -l
+ip l
+ffasfetch
+fastfetch
+fastfetch
+exit
+sleep 3
+sleep 3 &
+
 exit

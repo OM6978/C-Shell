@@ -3,13 +3,14 @@
 #include <stdio.h>
 #include <time.h>
 #include <stdarg.h>
+#include <string.h>
 
 static const char* LOG_FILE = "/home/om/Acads/C-Shell/log.txt";
 
 void logInit();
 
-void logString(int num_args, ...);
+void logMessage(const char *format, ...);
 
-void logInteger(int x);
+void logArgs(char ** argv);
 
 void logDest();

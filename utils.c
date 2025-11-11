@@ -1,10 +1,5 @@
 #include "utils.h"
-
-const char* historyPath = "/home/om/Acads/C-Shell/history.txt";
-
-int historyStart = 0;
-int historyLen = 0;
-char historyData[HISTORY_LEN][COMMAND_MAX];
+#include "log.h"
 
 int isPrefix(char* path,char* homedir)
 {
@@ -78,10 +73,13 @@ void subTildetoHome(char* path,char* homedir)
     path[plen] = '\0';
 }
 
-int splitArgs(char** argv,char* command)
+int splitArgs(char** argv,char* command,char** inputFile,char** outputFile)
 {
     int argc = 0;
     char* token = strtok(command,DELIMITERS);
+
+    const char* inputSym = "<";
+    const char* outputSym = ">";
     
     while(token != NULL)
     {
@@ -90,54 +88,44 @@ int splitArgs(char** argv,char* command)
             perror("Argument Limit Exceeded");
         }
 
-        argv[argc++] = token;
+        if(strcmp(token,inputSym) == 0 && *inputFile == NULL)
+        {
+            logMessage("Input Redirection Detected\n");
+
+            token = strtok(NULL,DELIMITERS);
+
+            if(token == NULL)
+            {
+                perror("Syntax error near token <");
+                return -1;
+            }
+
+            *inputFile = token;
+
+            logMessage("Input file specified: %s\n",*inputFile);
+        }
+        else if(strcmp(token,outputSym) == 0 && *outputFile == NULL)
+        {
+            logMessage("Output Redirection Detected\n");
+
+            token = strtok(NULL,DELIMITERS);
+
+            if(token == NULL)
+            {
+                perror("Syntax error near token >");
+                return -1;
+            }
+
+            *outputFile = token;
+
+            logMessage("Output file specified: %s\n",*outputFile);
+        }
+        else argv[argc++] = token;
+
         token = strtok(NULL,DELIMITERS);
     }
 
     argv[argc] = NULL;
 
     return argc;
-}
-
-void loadHistory()
-{
-    FILE *historyFile = fopen(historyPath, "r");
-    
-    if(historyFile == NULL)return;
-
-    char buffer[COMMAND_MAX];
-
-    while(fgets(buffer, COMMAND_MAX, historyFile) != NULL && historyLen < HISTORY_LEN)
-    {
-        buffer[strcspn(buffer, "\n")] = 0; 
-        
-        strcpy(historyData[historyLen++], buffer);
-    }
-
-    fclose(historyFile);
-}
-
-void updateHistory(char* command)
-{
-    if(historyLen == HISTORY_LEN)
-    {
-        strcpy(historyData[historyStart++],command);
-        historyStart%=HISTORY_LEN;
-    }
-    else
-    {
-        strcpy(historyData[historyLen++],command);
-    }
-}
-
-void writeHistory()
-{
-    FILE* historyFile = fopen(historyPath,"w");
-
-    for(int i=0;i<historyLen;i++)
-    {
-        fprintf(historyFile,"%s\n",historyData[(i+historyStart)%HISTORY_LEN]);
-    }
-
-    fclose(historyFile);
 }

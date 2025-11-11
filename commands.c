@@ -29,7 +29,7 @@ void changeDir(char** argv,char * cwd,char* homedir)
 
         if(argv[argc]!=NULL)
         {
-            printf("Too Many Arguments\n");
+            perror("Too Many Arguments");
             return;
         }
 
@@ -37,12 +37,11 @@ void changeDir(char** argv,char * cwd,char* homedir)
 
         if(strcmp(path,prevDirSym) == 0)
         {
-            logString(2,"- mentioned in cd,","Size of Previous Directory:");
-            logInteger(strlen(prevDir));
+            logMessage("- mentioned in cd, Size of Previous Directory: %d\n",strlen(prevDir));
 
             if(strlen(prevDir) == 0)
             {
-                printf("No Previous Directory\n");
+                perror("No Previous Directory");
                 return;
             }
             else
@@ -53,12 +52,11 @@ void changeDir(char** argv,char * cwd,char* homedir)
 
         subTildetoHome(path,homedir);
 
-        logString(2,"Path Specified in cd:",path);
+        logMessage("Path Specified in cd: %s\n",path);
         
         int cdCode = chdir(path);
         
-        logString(1,"cd Code Returned:");
-        logInteger(cdCode);
+        logMessage("cd Code Returned: %d\n",cdCode);
         
         if(cdCode == -1)
         {
@@ -75,7 +73,7 @@ void changeDir(char** argv,char * cwd,char* homedir)
     }
     else
     {
-        logString(1,"No Path Specified Defaulting to home dir");
+        logMessage("No Path Specified Defaulting to home dir\n");
         chdir(homedir);
         strcpy(prevDir,homedir);
     }

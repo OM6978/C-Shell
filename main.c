@@ -3,9 +3,29 @@
 #include "commands.h"
 #include "utils.h"
 #include "process.h"
+#include "history.h"
+
+void handleSIGINT(int sig)
+{
+    if(foregroundPID > 0)
+    {
+        int pidRes = kill(foregroundPID, SIGINT);
+        logMessage("Foreground Process Exited with Code: %d\n",pidRes);
+    }
+}
+
+void shellPrompt(char* username,char* hostname,char* cwd)
+{
+    printf(BOLD_LIME_GREEN);
+    printf("<%s@%s:%s> ",username,hostname,cwd);
+    printf(ANSI_COLOR_RESET);
+}
 
 int main()
 {
+    signal(SIGINT, handleSIGINT);
+    signal(SIGCHLD, handleSIGCHLD);
+
     logInit();
 
     char cwd[PATH_MAX];
@@ -29,21 +49,30 @@ int main()
     
     while(1)
     {
-        printf(BOLD_LIME_GREEN);
-        printf("<%s@%s:%s> ",username,hostname,cwd);
-        printf(ANSI_COLOR_RESET);
+        shellPrompt(username,hostname,cwd);
         
-        fgets(command,sizeof(command),stdin);
+        if(fgets(command,sizeof(command),stdin) == NULL) 
+        {
+            printf("\n");
+            logMessage("Exiting due to EOF (Ctrl+D) \n");
+            break;
+        }
+
         int cmdlen = strlen(command);
         command[--cmdlen] = 0;
 
         updateHistory(command);
 
-        int argc = splitArgs(argv,command);
+        char* inputFile = NULL;
+        char* outputFile = NULL;
 
-        if(argc == 0)continue;
+        int argc = splitArgs(argv,command,&inputFile,&outputFile);
 
-        logString(2,"Shell Command :",argv[0]);
+        if(argc <= 0)continue;
+
+        // logArgs(argv);
+
+        logMessage("Shell Command : %s\n",argv[0]);
 
         if(strcmp(argv[0],allCommands[0]) == 0)
         {            
@@ -63,7 +92,7 @@ int main()
         }
         else if(strcmp(argv[0],allCommands[4]) == 0)
         {
-            logString(1,"Exiting");
+            logMessage("Exiting\n");
             break;
         }
         else
@@ -72,14 +101,14 @@ int main()
             if(argv[argc-1][rarglen-1] == '&')
             {
                 if(rarglen == 1)
-                argv[--argc] = NULL;
+                    argv[--argc] = NULL;
                 else
-                argv[argc-1][--rarglen] = '\0';
+                    argv[argc-1][--rarglen] = '\0';
                 
-                executeStandaloneCommand(argv,0);
+                executeStandaloneCommand(argv,inputFile,outputFile,0);
             }
             else
-            executeStandaloneCommand(argv,1);
+                executeStandaloneCommand(argv,inputFile,outputFile,1);
         }
 
         updateCWD(cwd,homedir,sizeof(cwd));

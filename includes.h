@@ -4,6 +4,8 @@
 #include <unistd.h>
 #include <stdlib.h> 
 #include <string.h>
+#include <signal.h>
+#include <fcntl.h>
+#include <pwd.h>
 #include <sys/wait.h>
 #include <sys/types.h>
-#include <pwd.h>

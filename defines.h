@@ -2,6 +2,9 @@
 
 #include "includes.h"
 
+#define MIN(X, Y) (((X) < (Y)) ? (X) : (Y))
+#define MAX(X, Y) (((X) > (Y)) ? (X) : (Y))
+
 #define PATH_MAX 1000
 #define H_NAME_MAX 1000
 #define COMMAND_MAX 1000
@@ -10,9 +13,6 @@
 #define MAX_ARGS 64
 
 #define DELIMITERS " \t\n"
-
-#define MIN(X, Y) (((X) < (Y)) ? (X) : (Y))
-#define MAX(X, Y) (((X) > (Y)) ? (X) : (Y))
 
 #define LIME_GREEN "\033[38;2;134;252;121m"
 #define NORD_BLUE "\033[38;2;129;161;193m"

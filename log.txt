@@ -1,538 +1,103 @@
----------- [Session Date and Time: 06/11/2025 09:59:24] ----------
+---------- [Session Date and Time: 11/11/2025 23:13:39] ----------
 
-Shell Command : cd 
----------- [Session Date and Time: 06/11/2025 10:00:42] ----------
+Shell Command : sleep
+---------- [Session Date and Time: 11/11/2025 23:15:44] ----------
 
-Shell Command : exit 
-Exiting 
-
----------- [Session Date and Time: 06/11/2025 10:00:48] ----------
-
-Shell Command : cd 
-Path Specified in cd: /home/om 
----------- [Session Date and Time: 06/11/2025 10:01:16] ----------
-
-Shell Command : cd 
-Path Specified in cd: lol 
-Shell Command : exit 
-Exiting 
-
----------- [Session Date and Time: 06/11/2025 10:02:16] ----------
-
-Shell Command : cd 
-Path Specified in cd: /home/om 
----------- [Session Date and Time: 06/11/2025 10:05:31] ----------
-
-Shell Command : cd 
-Path Specified in cd: /home/om 
----------- [Session Date and Time: 06/11/2025 10:08:21] ----------
-
-Shell Command : cd
-Path Specified in cd: /home/om
----------- [Session Date and Time: 06/11/2025 10:12:11] ----------
-
-Shell Command : cd
-Path Specified in cd: /home/om
----------- [Session Date and Time: 06/11/2025 10:12:42] ----------
-
-Shell Command : cd
-Path Specified in cd: /home/om
-cd Code Returned:
----------- [Session Date and Time: 06/11/2025 10:15:03] ----------
-
-Shell Command : cd
-Path Specified in cd: /home/om
----------- [Session Date and Time: 06/11/2025 10:19:05] ----------
-
-Shell Command : cd
-Path Specified in cd: /home/om
----------- [Session Date and Time: 06/11/2025 10:22:29] ----------
-
-Shell Command : cd
-Path Specified in cd: /home/om
----------- [Session Date and Time: 06/11/2025 10:22:50] ----------
-
-Shell Command : cd
-Path Specified in cd: /home/om/Acads
----------- [Session Date and Time: 06/11/2025 10:25:32] ----------
-
-Shell Command : cd
-Path Specified in cd: /home/om
----------- [Session Date and Time: 06/11/2025 10:27:59] ----------
-
-Shell Command : cd
-Path Specified in cd: /home/om
-cd Code Returned:
+Shell Command : sleep
+Foreground Process Exited with Code:
 0
 Shell Command : exit
 Exiting
 
----------- [Session Date and Time: 06/11/2025 10:28:53] ----------
+---------- [Session Date and Time: 11/11/2025 23:16:01] ----------
 
-Shell Command : cd
-Path Specified in cd: /home/om
-cd Code Returned:
+Shell Command : sleep
+---------- [Session Date and Time: 11/11/2025 23:42:25] ----------
+
+Shell Command : sleep
+Foreground Process Exited with Code:
 0
 Shell Command : exit
 Exiting
 
----------- [Session Date and Time: 06/11/2025 10:32:36] ----------
+---------- [Session Date and Time: 11/11/2025 23:44:52] ----------
 
-Shell Command : cd
-Path Specified in cd: /home/om
-cd Code Returned:
-0
-Shell Command : cd
-Path Specified in cd: /home/om/Acads
-cd Code Returned:
-0
-Shell Command : cd
-No Path Specified Defaulting to home dir
+Shell Command : sleep
+Foreground Process Exited with Code: 0
 Shell Command : exit
 Exiting
 
----------- [Session Date and Time: 06/11/2025 10:36:59] ----------
+---------- [Session Date and Time: 11/11/2025 23:45:47] ----------
+
+Shell Command : exit
+Exiting
+
+---------- [Session Date and Time: 11/11/2025 23:48:05] ----------
 
 Shell Command : cd
 Path Specified in cd: ..
-cd Code Returned:
-0
+cd Code Returned: 0
 Shell Command : cd
-Path Specified in cd: ../BTP-2
-cd Code Returned:
--1
-Shell Command : cd
-Path Specified in cd: ../Acads
-cd Code Returned:
-0
-Shell Command : cd
-Path Specified in cd: ../Documents
-cd Code Returned:
-0
-Shell Command : exit
-Exiting
-
----------- [Session Date and Time: 06/11/2025 10:48:53] ----------
-
-Shell Command : cd
-- mentioned in cd, Size of Previous Directory:
-0
-Path Specified in cd: -
-cd Code Returned:
--1
-Shell Command : exit
-Exiting
-
----------- [Session Date and Time: 06/11/2025 10:49:13] ----------
-
-Shell Command : cd
-Path Specified in cd: =
-cd Code Returned:
--1
-Shell Command : cd
-- mentioned in cd, Size of Previous Directory:
-0
-Shell Command : cd
-Path Specified in cd: /home
-cd Code Returned:
-0
-Shell Command : cd
-- mentioned in cd, Size of Previous Directory:
-15
+- mentioned in cd, Size of Previous Directory: 15
 Path Specified in cd: /home/om/Acads/C-Shell
-cd Code Returned:
-0
-Shell Command : exit
-Exiting
-
----------- [Session Date and Time: 06/11/2025 10:50:36] ----------
-
+cd Code Returned: 0
 Shell Command : cd
-- mentioned in cd, Size of Previous Directory:
-0
-Shell Command : cd
-Path Specified in cd: /home
-cd Code Returned:
-0
-Shell Command : cd
-- mentioned in cd, Size of Previous Directory:
-15
-Path Specified in cd: /home/om/Acads/C-Shell
-cd Code Returned:
-0
-Shell Command : exit
-Exiting
-
----------- [Session Date and Time: 06/11/2025 11:15:36] ----------
-
-Shell Command : history
-Shell Command : exit
-Exiting
-
----------- [Session Date and Time: 06/11/2025 11:16:17] ----------
-
-Shell Command : history
-Shell Command : cd
-Path Specified in cd: /home
-cd Code Returned:
-0
-Shell Command : cd
-Path Specified in cd: /om
-cd Code Returned:
--1
-Shell Command : history
-Shell Command : exit
-Exiting
-
----------- [Session Date and Time: 06/11/2025 11:17:05] ----------
-
-Shell Command : history
-Shell Command : cd
-Path Specified in cd: /home/om
-cd Code Returned:
-0
-Shell Command : cd
-Path Specified in cd: lol
-cd Code Returned:
--1
-Shell Command : echo
-Shell Command : echo
-Shell Command : echo
-Shell Command : echo
-Shell Command : echo
-Shell Command : echo
-Shell Command : echo
-Shell Command : echo
-Shell Command : echo
-Shell Command : echo
-Shell Command : echo
-Shell Command : echo
-Shell Command : echo
-Shell Command : echo
-Shell Command : history
-Shell Command : echo
-Shell Command : echo
-Shell Command : echo
-Shell Command : echo
-Shell Command : history
-Shell Command : exit
-Exiting
-
----------- [Session Date and Time: 06/11/2025 11:22:06] ----------
-
-Shell Command : history
-Shell Command : cd
-Path Specified in cd: /home/om
-cd Code Returned:
-0
-Shell Command : cd
-Path Specified in cd: Acads
-cd Code Returned:
-0
-Shell Command : cd
-Path Specified in cd: C-Shell
-cd Code Returned:
-0
-Shell Command : echo
-Shell Command : echo
-Shell Command : echo
-Shell Command : history
-Shell Command : cd
-Path Specified in cd: ..
-cd Code Returned:
-0
-Shell Command : cd
-Path Specified in cd: C-Shell
-cd Code Returned:
-0
-Shell Command : cd
-- mentioned in cd, Size of Previous Directory:
-7
+- mentioned in cd, Size of Previous Directory: 7
 Path Specified in cd: /home/om/Acads
-cd Code Returned:
-0
-Shell Command : history
-Shell Command : cd
-Path Specified in cd: lol
-cd Code Returned:
--1
-Shell Command : echo
-Shell Command : echo
-Shell Command : echo
-Shell Command : echo
-Shell Command : echo
-Shell Command : echo
-Shell Command : echo
-Shell Command : echo
-Shell Command : echo
-Shell Command : echo
-Shell Command : echo
-Shell Command : echo
-Shell Command : echo
-Shell Command : history
+cd Code Returned: 0
 Shell Command : exit
 Exiting
 
----------- [Session Date and Time: 06/11/2025 11:29:34] ----------
+---------- [Session Date and Time: 11/11/2025 23:58:00] ----------
 
-Shell Command : history
-Shell Command : exit
-Exiting
----------- [Session Date and Time: 06/11/2025 11:31:18] ----------
+Exiting due to EOF (Ctrl+D) 
 
-Shell Command : history
-Shell Command : exit
-Exiting
----------- [Session Date and Time: 06/11/2025 11:31:54] ----------
+---------- [Session Date and Time: 11/11/2025 23:58:29] ----------
 
-Shell Command : history
-Shell Command : exit
-Exiting
----------- [Session Date and Time: 06/11/2025 11:33:08] ----------
+Exiting due to EOF (Ctrl+D) 
 
-Shell Command : history
-Shell Command : exit
-Exiting
+---------- [Session Date and Time: 11/11/2025 23:58:44] ----------
 
----------- [Session Date and Time: 06/11/2025 11:41:17] ----------
+Exiting due to EOF (Ctrl+D) 
 
-Shell Command : cd
-Path Specified in cd: lol
-cd Code Returned:
--1
+---------- [Session Date and Time: 11/11/2025 23:59:10] ----------
+
+Exiting due to EOF (Ctrl+D) 
+
+---------- [Session Date and Time: 12/11/2025 00:09:04] ----------
+
 Shell Command : exit
 Exiting
 
----------- [Session Date and Time: 06/11/2025 11:43:04] ----------
+---------- [Session Date and Time: 12/11/2025 00:10:18] ----------
 
-Shell Command : cd
-Path Specified in cd: lol
-cd Code Returned:
--1
-Shell Command : cd
-Path Specified in cd: /home/om
-cd Code Returned:
-0
-Shell Command : cd
-Path Specified in cd: /home
-cd Code Returned:
-0
-Shell Command : cd
-Path Specified in cd: ..
-cd Code Returned:
-0
-Shell Command : exit
-Exiting
-
----------- [Session Date and Time: 06/11/2025 11:49:06] ----------
-
-Shell Command : echo
-Shell Command : exit
-Exiting
-
----------- [Session Date and Time: 06/11/2025 12:00:33] ----------
-
+Input Redirection Detected
+Input file specified: history.txt
+Output Redirection Detected
+Output file specified: output.txt
+Shell Command : wc
 Shell Command : ls
-Shell Command : exit
-Exiting
+Exiting due to EOF (Ctrl+D) 
 
----------- [Session Date and Time: 06/11/2025 12:01:10] ----------
-
-Shell Command : ls
-Shell Command : exit
-Exiting
-
----------- [Session Date and Time: 06/11/2025 12:03:35] ----------
+---------- [Session Date and Time: 12/11/2025 00:11:17] ----------
 
 Shell Command : ls
 Shell Command : ls
-Shell Command : cat
-Shell Command : history
+Shell Command : ip
+Shell Command : ffasfetch
+Shell Command : fastfetch
 Shell Command : fastfetch
 Shell Command : exit
 Exiting
 
----------- [Session Date and Time: 06/11/2025 12:05:43] ----------
-
-Shell Command : history
-Shell Command : cd
-Path Specified in cd: ..
-cd Code Returned:
-0
-Shell Command : cd
-Path Specified in cd: C-Shell
-cd Code Returned:
-0
-Shell Command : ls
-Shell Command : exit
-Exiting
-
----------- [Session Date and Time: 06/11/2025 12:07:11] ----------
+---------- [Session Date and Time: 12/11/2025 00:28:00] ----------
 
 Shell Command : sleep
-Shell Command : exit
-Exiting
-
----------- [Session Date and Time: 06/11/2025 12:13:56] ----------
-
-Shell Command : ls
-Shell Command : echo
-Shell Command : fkdas
-Shell Command : echo
-Shell Command : exit
-Exiting
-
----------- [Session Date and Time: 06/11/2025 12:15:32] ----------
-
-Shell Command : fjdklas
-Shell Command : exit
-Exiting
-
-Shell Command : exit
-Exiting
-
----------- [Session Date and Time: 06/11/2025 12:16:31] ----------
-
-Shell Command : jdflsa
-Shell Command : exit
-Exiting
-
----------- [Session Date and Time: 06/11/2025 12:23:30] ----------
-
-Shell Command : history
-Shell Command : exit
-Exiting
-
----------- [Session Date and Time: 06/11/2025 12:23:36] ----------
-
-Shell Command : history
-Shell Command : exit
-Exiting
-
----------- [Session Date and Time: 06/11/2025 12:40:10] ----------
-
-Shell Command : echo
-Shell Command : echo
-Shell Command : ls
-Shell Command : grep
-Shell Command : ls
-Shell Command : ls|grep
-Shell Command : ls
-Shell Command : exit
-Exiting
-
----------- [Session Date and Time: 06/11/2025 12:44:17] ----------
+---------- [Session Date and Time: 12/11/2025 00:31:49] ----------
 
 Shell Command : sleep
+Foreground Process Exited with Code: 0
 Shell Command : sleep
-Shell Command : exit
-Exiting
-
----------- [Session Date and Time: 06/11/2025 12:45:49] ----------
-
-Shell Command : sleep
-Shell Command : exit
-Exiting
-
----------- [Session Date and Time: 06/11/2025 12:47:05] ----------
-
-Shell Command : sleep
-Shell Command : sleep
-Shell Command : ls
----------- [Session Date and Time: 06/11/2025 12:48:09] ----------
-
-Shell Command : ls
-Shell Command : exit
-Exiting
-
----------- [Session Date and Time: 06/11/2025 12:49:31] ----------
-
-Shell Command : cd
-Path Specified in cd: ..
-cd Code Returned:
-0
-Shell Command : ls
-Shell Command : cd
-Path Specified in cd: BBTP-2
-cd Code Returned:
--1
-Shell Command : cd
-Path Specified in cd: BTP-2
-cd Code Returned:
-0
-Shell Command : ls
-Shell Command : history
-Shell Command : exit
-Exiting
-
----------- [Session Date and Time: 06/11/2025 12:50:51] ----------
-
-Shell Command : history
-Shell Command : cd
-Path Specified in cd: ..
-cd Code Returned:
-0
-Shell Command : cd
-Path Specified in cd: BTP-2
-cd Code Returned:
-0
-Shell Command : ls
-Shell Command : cd
-Path Specified in cd: ..
-cd Code Returned:
-0
-Shell Command : history
-Shell Command : ls
-Shell Command : cd
-Path Specified in cd: CP
-cd Code Returned:
-0
-Shell Command : ls
-Shell Command : cd
-Path Specified in cd: CSES
-cd Code Returned:
-0
-Shell Command : ls
-Shell Command : cd
-Path Specified in cd: DP
-cd Code Returned:
-0
-Shell Command : ls
-Shell Command : g++
-Shell Command : ls
-Shell Command : cd
-Path Specified in cd: ..
-cd Code Returned:
-0
-Shell Command : cd
-Path Specified in cd: ../../
-cd Code Returned:
-0
-Shell Command : ls
-Shell Command : cd
-Path Specified in cd: C-Shhell
-cd Code Returned:
--1
-Shell Command : ls
-Shell Command : cd
-Path Specified in cd: C-Shell
-cd Code Returned:
-0
-Shell Command : ls
-Shell Command : history
-Shell Command : exit
-Exiting
-
----------- [Session Date and Time: 06/11/2025 12:53:05] ----------
-
-Shell Command : cd
-Path Specified in cd: /home/..
-cd Code Returned:
-0
-Shell Command : cd
-Path Specified in cd: /home/../home/om
-cd Code Returned:
-0
 Shell Command : exit
 Exiting
 
