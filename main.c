@@ -21,18 +21,29 @@ void shellPrompt(char* username,char* hostname,char* cwd)
     printf(ANSI_COLOR_RESET);
 }
 
+void assignShellUtilPaths(char* cwd)
+{
+    strcpy(historyPath,cwd);
+    strcat(historyPath,HISTORY_REL_PATH);
+
+    strcpy(logPath,cwd);
+    strcat(logPath,LOG_REL_PATH);
+}
+
 int main()
 {
     signal(SIGINT, handleSIGINT);
     signal(SIGCHLD, handleSIGCHLD);
 
-    logInit();
-
     char cwd[PATH_MAX];
     char hostname[H_NAME_MAX];
-
+    
     getcwd(cwd,sizeof(cwd));
     gethostname(hostname,sizeof(hostname));
+
+    assignShellUtilPaths(cwd);
+
+    logInit();
 
     uid_t uid = getuid(); 
     struct passwd *pw = getpwuid(uid);

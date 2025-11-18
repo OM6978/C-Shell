@@ -17,7 +17,7 @@ void handleSIGCHLD(int sig)
 
 void executeStandaloneCommand(char** argv,char* inputFile,char* outputFile,int foreground)
 {
-    pid_t pid, wpid;
+    pid_t pid;
     int status;
 
     pid = fork();
@@ -54,8 +54,10 @@ void executeStandaloneCommand(char** argv,char* inputFile,char* outputFile,int f
         perror("Process Fork Failed");
     }
     else if(foreground)
-    {
+    {   
         foregroundPID = pid;
+        
+        pid_t wpid;
 
         do
         {

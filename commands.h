@@ -13,8 +13,6 @@ static const char *allCommands[] = {
         "exit"
     };
 
-static char prevDir[PATH_MAX];
-
 void echo(char** argv);
 
 void pwd();

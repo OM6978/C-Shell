@@ -12,6 +12,8 @@
 #define HISTORY_DISPLAY 10
 #define MAX_ARGS 64
 
+#define HISTORY_REL_PATH "/history.txt"
+#define LOG_REL_PATH "/log.txt"
 #define DELIMITERS " \t\n"
 
 #define LIME_GREEN "\033[38;2;134;252;121m"

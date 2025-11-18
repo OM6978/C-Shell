@@ -1,5 +1,7 @@
 #include "commands.h"
 
+static char prevDir[PATH_MAX];
+
 void echo(char** argv)
 {
     int argc = 1;

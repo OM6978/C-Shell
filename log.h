@@ -5,7 +5,7 @@
 #include <stdarg.h>
 #include <string.h>
 
-static const char* LOG_FILE = "/home/om/Acads/C-Shell/log.txt";
+extern char logPath[PATH_MAX];
 
 void logInit();
 

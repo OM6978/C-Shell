@@ -3,7 +3,7 @@
 #include "defines.h"
 #include "log.h"
 
-extern const char* historyPath;
+extern char historyPath[PATH_MAX];
 
 extern int historyStart;
 extern int historyLen;

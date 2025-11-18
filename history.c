@@ -1,6 +1,6 @@
 #include "history.h"
 
-const char* historyPath = "/home/om/Acads/C-Shell/history.txt";
+char historyPath[PATH_MAX];
 
 int historyStart = 0;
 int historyLen = 0;

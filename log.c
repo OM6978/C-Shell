@@ -1,10 +1,13 @@
+#include "defines.h"
 #include "log.h"
+
+char logPath[PATH_MAX];
 
 static FILE* logPtr;
 
 void logInit()
 {
-    logPtr = fopen(LOG_FILE,"a");
+    logPtr = fopen(logPath,"a");
 
     time_t now = time(NULL);
     struct tm *t = localtime(&now);
