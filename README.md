@@ -100,24 +100,22 @@ make clean
 
 ## Project Structure
 ```
-Roll-No_OSMiniProject/
-├── README.md
-├── makefile
-├── main.c
-├── display.c
-├── display.h
-├── cd.c
-├── cd.h
-├── echo.c
-├── echo.h
-├── pwd.c
-├── pwd.h
+C-Shell/
+├── commands.c
+├── commands.h
+├── defines.h
 ├── history.c
 ├── history.h
-├── execute.c
-├── execute.h
-└── signals.c
-└── signals.h
+├── includes.h
+├── log.c
+├── log.h
+├── main.c
+├── makefile
+├── process.c
+├── process.h
+├── README.md
+├── utils.c
+└── utils.h
 ```
 
 ## Implementation Details
