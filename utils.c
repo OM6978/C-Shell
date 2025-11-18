@@ -86,6 +86,7 @@ int splitArgs(char** argv,char* command,char** inputFile,char** outputFile)
         if(argc == MAX_ARGS-1)
         {
             perror("Argument Limit Exceeded");
+            return -1;
         }
 
         if(strcmp(token,inputSym) == 0 && *inputFile == NULL)

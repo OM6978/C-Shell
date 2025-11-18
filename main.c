@@ -10,7 +10,7 @@ void handleSIGINT(int sig)
     if(foregroundPID > 0)
     {
         int pidRes = kill(foregroundPID, SIGINT);
-        logMessage("Foreground Process Exited with Code: %d\n",pidRes);
+        // logMessage("Foreground Process Exited with Code: %d\n",pidRes);
     }
 }
 
