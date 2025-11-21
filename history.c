@@ -26,6 +26,10 @@ void loadHistory()
 
 void updateHistory(char* command)
 {
+    // doesnt store if same command entered consecutively
+    if(historyLen > 0 && strcmp(historyData[(historyStart+historyLen-1+HISTORY_LEN)%HISTORY_LEN],command) == 0)
+        return;
+    
     if(historyLen == HISTORY_LEN)
     {
         strcpy(historyData[historyStart++],command);
